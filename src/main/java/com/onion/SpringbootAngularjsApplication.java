@@ -11,8 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class SpringbootAngularjsApplication {
 
+	/**
+	 *	查询接口
+	 * @param personName 前台传入的personName
+	 * @return 返回person对象json
+	 */
 	@RequestMapping(value = "/search",produces = {MediaType.APPLICATION_JSON_VALUE})
-
 	public Person search(String personName){
 		return  new Person(personName,22,"china");
 	}

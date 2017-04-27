@@ -2,10 +2,16 @@ package com.onion.bean;
 
 /**
  * Created by zhongmc on 2017/4/27.
+ * 学生实体类
  */
 public class Person {
+    /*学生姓名*/
     private String name;
+    /*学生年龄*/
     private Integer age;
+    /**
+     * 学生地址
+     */
     private String address;
 
     public String getName() {
